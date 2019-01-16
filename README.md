@@ -18,5 +18,15 @@ docker push vwarship/hello-world:latest
 
 ## 运行容器
 ```bash
-docker run vwarship/hello-world:latest
+docker run -p 5000:80 vwarship/hello-world:latest
+```
+
+## 访问应用
+```txt
+打开浏览器，访问网址：http://localhost:5000
+
+Hello World!
+
+Hostname: 86fcc9672e04
+IP: 172.17.0.2
 ```
